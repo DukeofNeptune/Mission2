@@ -13,13 +13,13 @@ namespace Mission2
             RollFunction rf = new RollFunction();
 
             //Creating output and collecting input for the user for the dice game
-            Console.WriteLine("Welcome to the dice throwing simulator! \n");
-            Console.WriteLine("How many dice rolls would you like to simulate? ");
+            Console.WriteLine("\nWelcome to the dice throwing simulator! \n");
+            Console.Write("How many dice rolls would you like to simulate? ");
             int numberofRolls  =  Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\n");
-            Console.WriteLine("DICE ROLLING SIMULATION RESULTS\n");
-            Console.WriteLine("Each " + "'" + "*" + "'" + " represents 1% of the total number of rolls." +"\n");
-            Console.WriteLine("Total number of rolls = 1000.\n");
+            Console.WriteLine();
+            Console.WriteLine("DICE ROLLING SIMULATION RESULTS");
+            Console.WriteLine("Each " + "\"" + "*" + "\"" + " represents 1% of the total number of rolls.");
+            Console.WriteLine("Total number of rolls = " + numberofRolls + ".\n");
 
             //Calling dice function
             rf.DiceRollsCount(numberofRolls);
